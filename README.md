@@ -8,7 +8,8 @@ GOV.UK Template, Toolkit & Elements SCSS Refactor
 Principles
 
 Remove duplicate resets
-
+Use scss comments // not css comments /* */
+Reduce nesting
 
 Writing classnames:
 
@@ -45,6 +46,10 @@ for example, .btn vs .button
 
 --
 
+GOV.UK template styles
+
+--
+
 Things to do:
 
 [ ] Compare Normalize to GOV.UK base styles and resets
@@ -52,3 +57,13 @@ Things to do:
 // https://github.com/alphagov/govuk_template/blob/master/source/assets/stylesheets/_basic.scss
 
 [ ]
+
+
+Decisons to make:
+
+What to do with the font files?
+Can we fallback to PNGs in template/images and instead use SVG?
+Print stylesheet & how do the mixins for this work?
+What units do we want to use rem/em/px a combo?
+
+Discuss: at the moment we use 15px, this means we can't vertically align things properly (can't divide by two and get a whole number)
