@@ -1,0 +1,40 @@
+// Variables
+@import "settings.global";
+@import "settings.colours";
+@import "settings.colours-organisation";
+@import "settings.debug";
+
+// Mixins
+@import "mixins";
+// @import "mixins.fonts";
+// @import "mixins.external-links";
+
+// Generic
+// Normalize should sit here.
+@import "base.normalize.scss";
+@import "base.reset.scss"; // Can this be removed, or moved into base.scss ?
+@import "base.print.scss";
+
+// Global styles
+@import "base";
+
+// HTML Elements
+
+// Objects
+// These should all be object.name-of-object.scss
+// Is this another level of absraction too many?
+@import "objects.grid-layout";
+
+// Components
+// It should be possible to reorder these without affecting the appearance of any components
+@import "component.template-cookie-message";
+@import "component.template-header";
+@import "component.template-footer";
+
+
+// These should all be component.name-of-component.scss
+@import "components.componentname";
+
+// Helpers
+// These are taken from the govuk template and should proably be mixins provided by the toolkit
+@import "helpers";
