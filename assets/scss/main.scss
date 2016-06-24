@@ -1,22 +1,26 @@
-// Variables
+// Settings - variables
 @import "settings.global";
 @import "settings.colours";
 @import "settings.colours-organisation";
-@import "settings.debug";
 
-// Mixins
-@import "mixins";
-// @import "mixins.fonts";
-// @import "mixins.external-links";
+// Tools - functions and mixins
+@import "tools.conditionals";
+@import "tools.css3";
+@import "tools.grid-layout";
+@import "tools.retina";
+@import "tools.print";
+@import "tools.shims";
+@import "tools.url-helpers";
 
 // Generic
 // Normalize should sit here.
-@import "base.normalize.scss";
-@import "base.reset.scss"; // Can this be removed, or moved into base.scss ?
-@import "base.print.scss";
+@import "generic.normalize.scss";
+@import "generic.reset.scss"; // Can this be removed, or moved into base.scss ?
+@import "generic.print.scss";
 
 // Global styles
-@import "base";
+@import "base.scss";
+@import "base-typography.scss";
 
 // HTML Elements
 
@@ -27,13 +31,27 @@
 
 // Components
 // It should be possible to reorder these without affecting the appearance of any components
-@import "component.template-cookie-message";
-@import "component.template-header";
-@import "component.template-footer";
 
+// GOV.UK "themed" components
+@import "component.govuk-cookie-message";
+@import "component.govuk-header";
+@import "component.govuk-footer";
+@import "component.media-player";
+@import "component.external-links";
 
-// These should all be component.name-of-component.scss
-@import "components.componentname";
+// Other components
+@import "component.breadcrumb";
+@import "component.button";
+@import "component.details";
+@import "component.form";
+@import "component.form-date";
+@import "component.form-validation";
+@import "component.panel";
+@import "component.phase-banner";
+@import "component.phase-tag";
+
+// Hacks and fixes
+@import "elements/shame";
 
 // Helpers
 // These are taken from the govuk template and should proably be mixins provided by the toolkit

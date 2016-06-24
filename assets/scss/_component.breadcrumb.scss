@@ -53,3 +53,14 @@
   }
 
 }
+
+// From GOV.UK elements/breadcrumbs.scss
+.breadcrumbs {
+  @include breadcrumbs;
+}
+
+#{$govuk-namespace}-breadcrumb {
+  @include breadcrumbs;
+}
+
+

@@ -1,6 +1,6 @@
 // Dimensions
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_grid_layout.scss#L6
-$site-width:          960px;
+$site-width:          960px !default;
 
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_measurements.scss#L3
 $full-width:          100%;
@@ -21,11 +21,11 @@ $gutter-two-thirds:   $gutter - $gutter-one-third;
 // Breakpoints
 // These are new! Based on
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_conditionals.scss#L45
-$breakpoint-mobile:    460px; // (and below) max-width
+$breakpoint-mobile:    460px !default; // (and below) max-width
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_conditionals.scss#L41
-$breakpoint-tablet:    461px; // (and above) min-width
+$breakpoint-tablet:    461px !default; // (and above) min-width
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_conditionals.scss#L37
-$breakpoint-desktop:   769px; // (and above) min-width
+$breakpoint-desktop:   769px !default; // (and above) min-width
 
 
 // IE specific vars for conditional stylesheets
@@ -66,3 +66,5 @@ $is-print:            false !default;
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_font_stack.scss#L19
 // Font reset for print
 $Print-reset: sans-serif;
+
+$govuk-namespace: gdsds- !default;
