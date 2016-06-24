@@ -29,3 +29,12 @@
     background-color: $beta-colour;
   }
 }
+
+// TODO: REFACTOR
+.#{$govuk-namespace}-phase-tag--alpha {
+  @include phase-tag($state: alpha);
+}
+
+.#{$govuk-namespace}-phase-tag--beta {
+  @include phase-tag($state: beta);
+}

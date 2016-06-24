@@ -6,3 +6,7 @@
 .shim {
   display: block;
 }
+
+// TODO: Delete these from govuk template
+// These classes are in the govuk template base stylesheet
+// Since it doesn't use the stick-at-top-when-scrolling.js, it should be safe to remove these
