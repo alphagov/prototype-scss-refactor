@@ -121,7 +121,10 @@ td {
   font-weight: normal;
 }
 
-abbr[title],
+abbr[title] {
+  text-decoration: none;
+}
+
 acronym[title] {
   text-decoration: none;
 }
@@ -159,22 +162,6 @@ hr {
     margin:  0;
     padding: 0;
 }
-
-
-
-
-
-/**
- * Give a help cursor to elements that give extra info on `:hover`.
- */
-abbr[title],
-dfn[title] {
-    cursor: help;
-}
-
-
-
-
 
 /**
  * Indicate that certain elements are interactive.
