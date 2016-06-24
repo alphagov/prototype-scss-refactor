@@ -17,22 +17,6 @@ main {
   display: block;
 }
 
-// self clearing floats
-.group:before,
-.group:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden;
- }
-
-.group:after {
-    clear: both;
-}
-.group {
-    zoom: 1;
-}
-
 // make elements stick at top of viewport when scrolling
 .content-fixed {
   top: 0;

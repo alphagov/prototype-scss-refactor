@@ -1,6 +1,22 @@
 // Helpers
 // ==========================================================================
 
+// self clearing floats
+.group:before,
+.group:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+ }
+
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1;
+}
+
 // If image-url is not defined (if we are not in a Rails environment)
 // Set a path to /public/images
 @if not(function-exists(image-url)) {
