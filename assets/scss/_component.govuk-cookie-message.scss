@@ -16,3 +16,17 @@
     margin-bottom: 0;
   }
 }
+
+.#{$govuk-namespace}-cookie-message {
+  width: 100%;
+  background-color: $light-blue-25;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.#{$govuk-namespace}-cookie-message__text {
+  @extend %site-width-container; // Components should not have layout!! Remove this
+  @include core-16;
+  margin-top: 0;
+  margin-bottom: 0;
+}

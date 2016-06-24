@@ -34,7 +34,7 @@
 // It should be possible to reorder these without affecting the appearance of any components
 
 // GOV.UK "themed" components
-// @import "component.govuk-cookie-message";
+@import "component.govuk-cookie-message";
 // @import "component.govuk-header";
 // @import "component.govuk-footer";
 // @import "component.media-player";
@@ -44,6 +44,7 @@
 @import "component.box";
 @import "component.breadcrumb";
 @import "component.button";
+
 // @import "component.details";
 // @import "component.form";
 // @import "component.form-date";
