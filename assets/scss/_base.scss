@@ -12,10 +12,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup,
   vertical-align: baseline;
 }
 
-b,
-strong {
-  font-weight: 600;
-}
+
 
 img {
   border: 0;
@@ -66,6 +63,14 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+// Override normalize.css line 140
+b,
+strong {
+  font-weight: 600;
 }
 
 @include ie-lte(7) {
