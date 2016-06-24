@@ -102,12 +102,20 @@ strong {
   }
 }
 
+// From the template
+ol, ul, nav ol, nav ul {
+  list-style: inherit;
+}
+
+// From elements
+ul,
+ol {
+  list-style-type: none;
+}
+
 // Form base styles are in _base.form-elements.scss
 
 // COPIED FROM GOV.UK TEMPLATE, DO WE NEED ANYTHING BELOW THIS LINE?
 html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {
   vertical-align: baseline;
 }
-
-// Override default table styles
-table, td, th { font-family: $NTA-Light; }
