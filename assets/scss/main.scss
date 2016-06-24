@@ -55,8 +55,7 @@
 // @import "component.phase-tag";
 
 // Hacks and fixes
-@import "elements/shame";
+@import "trumps.shame";
 
-// Helpers
-// These are taken from the govuk template and should proably be mixins provided by the toolkit
-@import "helpers";
+// Overrides, helpers and utilities
+@import "trumps.helpers";
