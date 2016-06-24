@@ -1,0 +1,24 @@
+a:link {
+  color: $link-colour;
+}
+
+a:visited {
+  color: $link-visited-colour;
+}
+
+a:hover {
+  color: $link-hover-colour;
+}
+
+a:active {
+  color: $link-active-colour;
+}
+
+// Delete this and instead require a class
+a[rel="external"] {
+  @include external-link-default;
+  @include external-link-16;
+  @include media(tablet) {
+    @include external-link-19;
+  }
+}
