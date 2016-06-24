@@ -261,3 +261,7 @@
     color: $black;
   }
 }
+
+#global-header input:focus {
+  outline: 3px solid $focus-colour;
+}
