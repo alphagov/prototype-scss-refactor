@@ -1,24 +1,14 @@
-// http://jsfiddle.net/csswizardry/222qr/
+// Overrides to Normalize.scss are in here
+
+// BASE STYLES SET BY GOVUK TEMPLATE
 // https://raw.githubusercontent.com/alphagov/govuk_template/master/source/assets/stylesheets/_basic.scss
+
 // needed for IE10 desktop snap mode: http://menacingcloud.com/?c=cssViewportOrMetaTag
 @-ms-viewport {
   width: device-width;
 }
 
-body, button, input, table, td, th { font-family: $NTA-Light; }
-
-// basic styles for HTML5 and other elements
-html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {
-  vertical-align: baseline;
-}
-
-// adjustments to normalize.css
-
 /*
-*
-* 1. Prevents iOS text size adjust after orientation change, without disabling
-*    user zoom.
-*
  * 2. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
  *    http://clagnut.com/blog/348/#c790
  *    note - font-size reduced to 62.5% to allow simple rem/px font-sizing and fallback
@@ -46,10 +36,10 @@ html {
  * 1. Font-size increased to compensate for change to html element font-size in
  *    order to support beta typography which was set in ems
  *    (62.5% * 160% = 100%)
- * 2. Addresses margins handled incorrectly in IE6/7
  */
 
 body {
+  font-family: $NTA-Light;
   font-size: 160%; /* 1 */
   background: $white;
   color: $text-colour;
@@ -111,3 +101,13 @@ strong {
     overflow:visible;
   }
 }
+
+// Form base styles are in _base.form-elements.scss
+
+// COPIED FROM GOV.UK TEMPLATE, DO WE NEED ANYTHING BELOW THIS LINE?
+html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {
+  vertical-align: baseline;
+}
+
+// Override default table styles
+table, td, th { font-family: $NTA-Light; }
