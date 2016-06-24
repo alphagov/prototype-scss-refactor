@@ -34,22 +34,22 @@
 // It should be possible to reorder these without affecting the appearance of any components
 
 // GOV.UK "themed" components
-@import "component.govuk-cookie-message";
-@import "component.govuk-header";
-@import "component.govuk-footer";
-@import "component.media-player";
-@import "component.external-links";
+// @import "component.govuk-cookie-message";
+// @import "component.govuk-header";
+// @import "component.govuk-footer";
+// @import "component.media-player";
+// @import "component.external-links";
 
 // Other components
 @import "component.breadcrumb";
-@import "component.button";
-@import "component.details";
-@import "component.form";
-@import "component.form-date";
-@import "component.form-validation";
-@import "component.panel";
-@import "component.phase-banner";
-@import "component.phase-tag";
+// @import "component.button";
+// @import "component.details";
+// @import "component.form";
+// @import "component.form-date";
+// @import "component.form-validation";
+// @import "component.panel";
+// @import "component.phase-banner";
+// @import "component.phase-tag";
 
 // Hacks and fixes
 @import "elements/shame";
