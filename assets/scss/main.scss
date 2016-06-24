@@ -34,24 +34,24 @@
 // It should be possible to reorder these without affecting the appearance of any components
 
 // GOV.UK "themed" components
-@import "component.govuk-cookie-message";
-@import "component.govuk-header";
-@import "component.govuk-footer";
-@import "component.media-player";
-@import "component.external-links";
+@import "components.cookie-message";
+@import "components.global-header";
+@import "components.global-footer";
+@import "components.media-player";
+@import "components.external-links";
 
 // Other components
-@import "component.box";
-@import "component.breadcrumb";
-@import "component.button";
+@import "components.box";
+@import "components.breadcrumb";
+@import "components.button";
 
-// @import "component.details";
-// @import "component.form";
-// @import "component.form-date";
-// @import "component.form-validation";
-// @import "component.panel";
-// @import "component.phase-banner";
-// @import "component.phase-tag";
+// @import "components.details";
+// @import "components.form";
+// @import "components.form-date";
+// @import "components.form-validation";
+// @import "components.panel";
+// @import "components.phase-banner";
+// @import "components.phase-tag";
 
 // Hacks and fixes
 @import "trumps.shame";
