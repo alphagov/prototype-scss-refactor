@@ -15,6 +15,7 @@
 
 // Generic
 // Normalize should sit here.
+// @import generic.box-sizing.scss // Do we want to set this globally?
 @import "generic.normalize.scss";
 @import "generic.reset.scss"; // Can this be removed, or moved into base.scss ?
 @import "generic.print.scss";
