@@ -43,3 +43,9 @@ fieldset {
     margin-left: -7px;
   }
 }
+
+// Indicate that certain elements are interactive
+[role="button"],
+label {
+    cursor: pointer;
+}

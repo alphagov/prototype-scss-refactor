@@ -8,15 +8,6 @@
 
 div,
 span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
 a,
 abbr,
 acronym,
@@ -44,18 +35,9 @@ b,
 u,
 i,
 center,
-dl,
 dt,
-dd,
-ol,
-ul,
 li,
-fieldset,
-form,
 label,
-legend,
-table,
-caption,
 tbody,
 tfoot,
 thead,
@@ -67,7 +49,6 @@ aside,
 canvas,
 details,
 embed,
-figure,
 figcaption,
 footer,
 header,
@@ -83,6 +64,17 @@ mark {
   border: none;
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+figure,
+table, th, td, caption,
+hr {
+    margin:  0;
+    padding: 0;
 }
 
 h1,
@@ -127,57 +119,4 @@ abbr[title] {
 
 acronym[title] {
   text-decoration: none;
-}
-
-// Reset from Inuit CSS
-
-/*------------------------------------*\
-    #RESET
-\*------------------------------------*/
-
-/**
- * As well as using normalize.css, it is often advantageous to remove all
- * margins from certain elements.
- */
-body,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-dl, dd, ol, ul,
-form, fieldset, legend,
-figure,
-table, th, td, caption,
-hr {
-    margin:  0;
-    padding: 0;
-}
-
-/**
- * Indicate that certain elements are interactive.
- */
-[role="button"],
-label {
-    cursor: pointer;
-}
-
-
-
-
-
-/**
- * Remove underlines from potentially troublesome elements.
- */
-u,
-ins {
-    text-decoration: none;
-}
-
-
-
-
-
-/**
- * Apply faux underlines to inserted text via `border-bottom`.
- */
-ins {
-    border-bottom: 1px solid;
 }
