@@ -7,3 +7,14 @@
   background: $turquoise;
   text-align: center;
 }
+
+.#{$govuk-namespace}-box {
+  margin: 1em 0;
+  padding: 2em 0 1em;
+  text-align: center;
+}
+
+.#{$govuk-namespace}-box--turquoise {
+  color: $white;
+  background: $turquoise;
+}
