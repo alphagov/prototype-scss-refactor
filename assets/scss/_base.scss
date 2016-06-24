@@ -5,7 +5,7 @@
   width: device-width;
 }
 
-html, body, button, input, table, td, th { font-family: $NTA-Light; }
+body, button, input, table, td, th { font-family: $NTA-Light; }
 
 // basic styles for HTML5 and other elements
 html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {
@@ -73,9 +73,7 @@ img {
  */
 
 html {
-
-  -webkit-text-size-adjust: 100%; /* 1 */
-  -ms-text-size-adjust: 100%; /* 1 */
+  font-family: $NTA-Light;
 
   // Set background colour to match footer background
   background-color: $footer-background;
