@@ -201,3 +201,9 @@
     background-image: file-url("icon-pointer-2x.png");
   }
 }
+
+.#{$govuk-namespace}-button {
+  @include button;
+}
+
+// TODO: Think of sensible names for button modifiers
