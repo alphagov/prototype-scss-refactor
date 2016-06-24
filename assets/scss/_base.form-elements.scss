@@ -17,6 +17,29 @@ select:focus {
   outline: 3px solid $focus-colour;
 }
 
+// Remove margin under textarea in Chrome and FF
+textarea {
+  display: block;
+}
+
 textarea:focus {
   outline: 3px solid $focus-colour;
+}
+
+// Fieldset is used to group more than one .form-group
+fieldset {
+  width: 100%;
+  // Override normalize
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Fix left hand gap in IE7 and below
+// This feels hacky, should it go elsewhere!?
+// Test this to make sure it is needed
+@include ie-lte(7) {
+  legend {
+    margin-left: -7px;
+  }
 }
