@@ -33,31 +33,27 @@
 // Components
 // It should be possible to reorder these without affecting the appearance of any components
 
-// GOV.UK "themed" components
 @import "components.cookie-message";
-@import "components.global-header";
-@import "components.global-footer";
-@import "components.media-player";
-@import "components.external-links";
-
-// Other components
 @import "components.box";
 @import "components.breadcrumb";
 @import "components.buttons";
-
 @import "components.details";
 @import "components.external-links";
 @import "components.form";
 @import "components.form-block-labels";
 @import "components.form-date";
 @import "components.form-validation";
+@import "components.global-header";
+@import "components.global-footer";
 @import "components.icons";
 @import "components.lists";
-// @import "components.panel";
+@import "components.media-player";
+@import "components.panel";
 @import "components.phase-banner";
 @import "components.phase-tag";
 @import "components.sticky-nav";
 @import "components.tables";
+@import "components.typography";
 
 // Hacks and fixes
 @import "trumps.shame";
