@@ -1,3 +1,4 @@
+// TODO: REMOVE .table-font-xsmall
 .table-font-xsmall {
 
   th {
@@ -14,6 +15,7 @@
   }
 }
 
+// NEW: BEM options for tables
 .table__header-numeric {
   text-align: right;
 }
