@@ -249,3 +249,15 @@
     font-size: 0;
   }
 }
+
+// Move focus styles to sit with component styles
+#global-header {
+  h1 a:focus {
+    background-color: transparent;
+    outline: none;
+  }
+
+  a:focus {
+    color: $black;
+  }
+}

@@ -170,14 +170,3 @@ button:focus,
 #global-header input:focus {
   outline: 3px solid $focus-colour;
 }
-
-#global-header {
-  h1 a:focus {
-    background-color: transparent;
-    outline: none;
-  }
-
-  a:focus {
-    color: $black;
-  }
-}
