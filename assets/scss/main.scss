@@ -6,10 +6,11 @@
 // Tools - functions and mixins
 @import "tools.conditionals";
 @import "tools.css3";
+@import "tools.device-pixels";
 @import "tools.grid-layout";
-@import "tools.retina";
 @import "tools.print";
 @import "tools.shims";
+@import "tools.typography";
 @import "tools.url-helpers";
 
 // Generic
