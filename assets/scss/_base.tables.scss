@@ -19,6 +19,7 @@ table {
   th {
     font-weight: 700;
     // Right align headings for numeric content
+    // TODO: REMOVE .numeric as new table styles exist in _component.table.scss
     &.numeric {
       text-align: right;
     }
@@ -26,24 +27,9 @@ table {
 
   // Allow a qualifying element, only table data cells should use tabular numbers
   // scss-lint:disable QualifyingElement
+  // TODO: REMOVE .numeric as new table styles exist in _component.table.scss
   td.numeric {
     @include core-16($tabular-numbers: true);
     text-align: right;
-  }
-}
-
-.table-font-xsmall {
-
-  th {
-    @include bold-16;
-  }
-
-  td {
-    @include core-16;
-  }
-
-  th,
-  td {
-    padding: em(12, 16) em(20, 16) em(9, 16) 0;
   }
 }
