@@ -255,37 +255,3 @@ p {
   border: 1px solid $border-colour;
   padding: 4px 4px 2px;
 }
-
-// Horizontal rule style
-hr {
-  display: block;
-  background: $border-colour;
-  border: 0;
-  height: 1px;
-  margin-top: $gutter;
-  margin-bottom: $gutter;
-  padding: 0;
-
-  @include ie-lte(7) {
-    color: $border-colour;
-  }
-}
-
-// Notice, text with an icon to the left
-.notice {
-  @extend %contain-floats;
-  position: relative;
-
-  .icon {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -17px; // Half the height of the important icon
-  }
-
-  strong {
-    display: block;
-    padding-left: (35 + 30) + px;
-    margin-left: -$gutter-half;
-  }
-}
