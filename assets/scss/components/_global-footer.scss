@@ -1,4 +1,7 @@
+// Refactoring:
 // https://raw.githubusercontent.com/alphagov/govuk_template/master/source/assets/stylesheets/_footer.scss
+// #footer
+
 #footer {
   background-color: $footer-background;
   border-top: 1px solid $footer-border-top;
@@ -178,6 +181,9 @@
 
 // TODO: REFACTOR
 .#{$govuk-namespace}-global-footer {
+}
+
+.#{$govuk-namespace}-global-footer__inner {
 }
 
 .#{$govuk-namespace}-global-footer__metadata {

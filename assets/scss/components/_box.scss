@@ -1,12 +1,6 @@
-// Box with turquoise background and white text
-// Used for transaction end pages, and Bank Holidays
-.govuk-box-highlight {
-  margin: 1em 0;
-  padding: 2em 0 1em;
-  color: $white;
-  background: $turquoise;
-  text-align: center;
-}
+// Refactoring:
+// https://github.com/alphagov/govuk_elements/blob/master/public/sass/elements/_components.scss
+// .govuk-box-highlight
 
 .#{$govuk-namespace}-box {
   margin: 1em 0;
@@ -14,7 +8,7 @@
   text-align: center;
 }
 
-.#{$govuk-namespace}-box--turquoise {
+.#{$govuk-namespace}-box--highlight {
   color: $white;
   background: $turquoise;
 }

@@ -1,21 +1,6 @@
+// Refactoring:
 // https://github.com/alphagov/govuk_template/blob/master/source/assets/stylesheets/_header.scss#L252
-
-.js-enabled #global-cookie-message {
-  display: none; /* shown with JS, always on for non-JS */
-}
-
-#global-cookie-message {
-  width: 100%;
-  background-color: $light-blue-25;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  p {
-    @extend %site-width-container;
-    @include core-16;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
+// #global-cookie-message
 
 .#{$govuk-namespace}-cookie-message {
   width: 100%;
@@ -29,4 +14,9 @@
   @include core-16;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+// How do we want to define .js-enabled modifiers?
+.js-enabled #global-cookie-message {
+  display: none; // shown with JS, always on for non-JS
 }
