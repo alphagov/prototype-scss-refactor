@@ -15,6 +15,7 @@ $site-width: 960px;
 //   @extend %site-width-container;
 // }
 
+.o-site-width-container,
 %site-width-container {
   max-width: $site-width;
 
