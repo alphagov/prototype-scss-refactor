@@ -115,6 +115,7 @@ Causes rules to trickle together and we are adding on layers, not undoing.
 
 ### Other things to think about
 
+- How do we want to define .js-enabled modifiers?
 - Can we reduce the size of the font files?
 - Can we fallback to PNGs in template/images and instead use SVG?
 - Print stylesheet & how do the mixins for this work?
