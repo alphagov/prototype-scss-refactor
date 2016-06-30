@@ -1,24 +1,7 @@
 // Refactor:
 // https://github.com/alphagov/govuk_elements/blob/master/public/sass/elements/_tables.scss
+// .table-font-xsmall
 
-// TODO: REMOVE .table-font-xsmall
-.table-font-xsmall {
-
-  th {
-    @include bold-16;
-  }
-
-  td {
-    @include core-16;
-  }
-
-  th,
-  td {
-    padding: em(12, 16) em(20, 16) em(9, 16) 0;
-  }
-}
-
-// NEW: BEM options for tables
 .table__header-numeric {
   text-align: right;
 }

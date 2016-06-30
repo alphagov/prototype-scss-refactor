@@ -1,9 +1,6 @@
 // Refactoring:
 // https://raw.githubusercontent.com/alphagov/govuk_frontend_toolkit/master/stylesheets/design-patterns/_media-player.scss
 
-@import 'settings/colours';
-@import 'tools/url-helpers';
-
 // Player overrides
 
 @mixin media-player {

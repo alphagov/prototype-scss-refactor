@@ -113,7 +113,22 @@ ol {
   list-style-type: none;
 }
 
-// Form base styles are in _base.form-elements.scss
+// Horizontal rule style
+hr {
+  display: block;
+  background: $border-colour;
+  border: 0;
+  height: 1px;
+  margin-top: $gutter;
+  margin-bottom: $gutter;
+  padding: 0;
+
+  @include ie-lte(7) {
+    color: $border-colour;
+  }
+}
+
+// Form base styles are in _base/form-elements.scss
 
 // COPIED FROM GOV.UK TEMPLATE, DO WE NEED ANYTHING BELOW THIS LINE?
 html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {

@@ -1,11 +1,6 @@
 // Refactor:
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/design-patterns/_alpha-beta.scss
 
-@import "settings/colours";
-@import "tools/typography";
-@import "tools/shims";
-@import "tools/grid_layout";
-
 @mixin phase-banner($state: alpha) {
   padding: 10px 0 8px;
 

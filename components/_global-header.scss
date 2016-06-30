@@ -2,11 +2,6 @@
 // https://github.com/alphagov/govuk_template/blob/master/source/assets/stylesheets/_header.scss
 // #global-header
 
-@import 'settings/global';
-@import 'tools/conditionals';
-@import 'tools/shims';
-
-
 #global-header {
   background-color: $black;
   width: 100%;

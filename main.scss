@@ -14,15 +14,15 @@
 @import "tools/url-helpers";
 
 // Generic
-// Normalize should sit here.
 @import "generic/normalize";
-@import "generic/reset"; // Can this be removed, or moved into base.scss ?
+@import "generic/reset";
+// Should the print stylesheet sit here?
 @import "generic/print";
 
 // Global styles
-@import "base/base.scss";
-@import "base/tables.scss";
-@import "base/form-elements.scss";
+@import "base/base";
+@import "base/tables";
+@import "base/form-elements";
 
 // HTML Elements
 
@@ -47,10 +47,10 @@
 @import "components/icons";
 @import "components/lists";
 @import "components/media-player";
+@import "components/notice";
 @import "components/panel";
 @import "components/phase-banner";
 @import "components/phase-tag";
-@import "components/sticky-nav";
 @import "components/tables";
 @import "components/typography";
 
