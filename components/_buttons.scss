@@ -3,11 +3,6 @@
 // https://raw.githubusercontent.com/alphagov/govuk_elements/master/public/sass/elements/_buttons.scss
 // .button
 
-@import 'settings/colours';
-@import 'tools/conditionals';
-@import 'tools/css3';
-@import 'tools/shims';
-
 @mixin button($colour: $button-colour) {
   // Colour
   background-color: $colour;

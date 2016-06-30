@@ -2,12 +2,6 @@
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/design-patterns/_breadcrumbs.scss
 // .breadcrumbs
 
-@import "settings/colours";
-@import "tools/typography";
-@import "tools/shims";
-@import "tools/url-helpers";
-
-
 .#{$govuk-namespace}-breadcrumb {
   padding-top: 0.75em;
   padding-bottom: 0.75em;
