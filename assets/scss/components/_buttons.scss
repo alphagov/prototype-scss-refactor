@@ -1,26 +1,14 @@
-// https://raw.githubusercontent.com/alphagov/govuk_frontend_toolkit/master/stylesheets/design-patterns/_buttons.scss
+// Refactoring:
+// https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/design-patterns/_buttons.scss
+// From GOV.UK frontend
+// and
+// https://raw.githubusercontent.com/alphagov/govuk_elements/master/public/sass/elements/_buttons.scss
+// From GOV.UK elements
 
-@import '../shims';
-@import '../css3';
-@import '../conditionals';
-@import '../colours';
-
-// Mixin and defaults for making buttons on GOV.UK services.
-
-// For guidance, see: https://www.gov.uk/service-manual/design-and-content/resources/buttons.html
-
-// Example usage:
-
-// .button{
-//   @include button;
-// }
-// .button-secondary{
-//   @include button($grey-3);
-// }
-// .button-warning{
-//   @include button($red);
-// }
-
+@import 'settings/colours';
+@import 'tools/conditionals';
+@import 'tools/css3';
+@import 'tools/shims';
 
 @mixin button($colour: $button-colour) {
   // Colour
@@ -150,43 +138,39 @@
   }
 }
 
-// https://raw.githubusercontent.com/alphagov/govuk_elements/master/public/sass/elements/_buttons.scss
-// Buttons
-// ==========================================================================
-
-.button {
+.#{$govuk-namespace}-button {
   @include button ($button-colour);
+
   @include box-sizing (border-box);
   vertical-align: top;
 
   @include media (mobile) {
     width: 100%;
   }
+
+  // Fix unwanted button padding in Firefox
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:focus {
+    outline: 3px solid $focus-colour;
+  }
 }
 
-// Fix unwanted button padding in Firefox
-.button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-.button:focus {
-  outline: 3px solid $focus-colour;
-}
-
-// Disabled buttons
-.button[disabled="disabled"] {
+.#{$govuk-namespace}-button--disabled {
   background: $button-colour;
+
+  &:focus {
+    outline: none;
+  }
 }
 
-.button[disabled="disabled"]:focus {
-  outline: none;
-}
-
-// Start now buttons
-.button-start,
-.button-get-started {
+// TODO: Think of sensible names for button modifiers
+.#{$govuk-namespace}-button--get-started {
   @include bold-24;
+
   background-image: file-url("icon-pointer.png");
   background-repeat: no-repeat;
   background-position: 100% 50%;
@@ -201,9 +185,3 @@
     background-image: file-url("icon-pointer-2x.png");
   }
 }
-
-.#{$govuk-namespace}-button {
-  @include button;
-}
-
-// TODO: Think of sensible names for button modifiers
