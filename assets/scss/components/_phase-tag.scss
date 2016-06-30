@@ -1,16 +1,5 @@
-// https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/design-patterns/_alpha-beta.scss
-
-// Phase tag usage:
-//
-// Alpha
-// .phase-tag {
-//    @include phase-tag;
-// }
-//
-// Beta
-// .phase-tag {
-//    @include phase-tag(beta);
-// }
+// Refactor:
+// https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/design-patterns/_alpha-beta.scss#L50
 
 @mixin phase-tag($state: alpha) {
   @include inline-block;

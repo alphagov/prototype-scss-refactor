@@ -1,14 +1,10 @@
+// Refactor:
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/design-patterns/_alpha-beta.scss
-@import "../colours";
-@import "../typography";
-@import "../shims";
-@import "../grid_layout";
 
-// Phase banner usage:
-//
-// .phase-banner {
-//    @include phase-banner($state: beta);
-// }
+@import "settings/colours";
+@import "tools/typography";
+@import "tools/shims";
+@import "tools/grid_layout";
 
 @mixin phase-banner($state: alpha) {
   padding: 10px 0 8px;
@@ -35,18 +31,6 @@
     vertical-align: baseline;
   }
 }
-
-// Phase banners
-// ==========================================================================
-
-.phase-banner-alpha {
-  @include phase-banner($state: alpha);
-}
-
-.phase-banner-beta {
-  @include phase-banner($state: beta);
-}
-
 
 // TODO: REFACTOR
 .#{$govuk-namespace}-phase-banner--alpha {

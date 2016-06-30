@@ -1,3 +1,6 @@
+// Refactor:
+// https://github.com/alphagov/govuk_template/blob/master/source/assets/stylesheets/_basic.scss#L36
+
 // make elements stick at top of viewport when scrolling
 .content-fixed {
   top: 0;
@@ -8,5 +11,4 @@
 }
 
 // TODO: Delete these from govuk template
-// These classes are in the govuk template base stylesheet
 // Since it doesn't use the stick-at-top-when-scrolling.js, it should be safe to remove these
