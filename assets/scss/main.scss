@@ -1,29 +1,28 @@
 // Settings - variables
-@import "settings.global";
-@import "settings.colours";
-@import "settings.colours-organisation";
+@import "settings/global";
+@import "settings/colours";
+@import "settings/colours-organisation";
 
 // Tools - functions and mixins
-@import "tools.conditionals";
-@import "tools.css3";
-@import "tools.device-pixels";
-@import "tools.grid-layout";
-@import "tools.print";
-@import "tools.shims";
-@import "tools.typography";
-@import "tools.url-helpers";
+@import "tools/conditionals";
+@import "tools/css3";
+@import "tools/device-pixels";
+@import "tools/grid-layout";
+@import "tools/print";
+@import "tools/shims";
+@import "tools/typography";
+@import "tools/url-helpers";
 
 // Generic
 // Normalize should sit here.
-// @import generic.box-sizing.scss // Do we want to set this globally?
-@import "generic.normalize.scss";
-@import "generic.reset.scss"; // Can this be removed, or moved into base.scss ?
-@import "generic.print.scss";
+@import "generic/normalize.scss";
+@import "generic/reset.scss"; // Can this be removed, or moved into base.scss ?
+@import "generic/print.scss";
 
 // Global styles
-@import "base.scss";
-@import "base-tables.scss";
-@import "base-form-elements.scss";
+@import "base/base.scss";
+@import "base/tables.scss";
+@import "base/form-elements.scss";
 
 // HTML Elements
 
@@ -33,30 +32,30 @@
 // Components
 // It should be possible to reorder these without affecting the appearance of any components
 
-@import "components.cookie-message";
-@import "components.box";
-@import "components.breadcrumb";
-@import "components.buttons";
-@import "components.details";
-@import "components.external-links";
-@import "components.form";
-@import "components.form-block-labels";
-@import "components.form-date";
-@import "components.form-validation";
-@import "components.global-header";
-@import "components.global-footer";
-@import "components.icons";
-@import "components.lists";
-@import "components.media-player";
-@import "components.panel";
-@import "components.phase-banner";
-@import "components.phase-tag";
-@import "components.sticky-nav";
-@import "components.tables";
-@import "components.typography";
+@import "components/cookie-message";
+@import "components/box";
+@import "components/breadcrumb";
+@import "components/buttons";
+@import "components/details";
+@import "components/external-links";
+@import "components/form";
+@import "components/form-block-labels";
+@import "components/form-date";
+@import "components/form-validation";
+@import "components/global-header";
+@import "components/global-footer";
+@import "components/icons";
+@import "components/lists";
+@import "components/media-player";
+@import "components/panel";
+@import "components/phase-banner";
+@import "components/phase-tag";
+@import "components/sticky-nav";
+@import "components/tables";
+@import "components/typography";
 
 // Hacks and fixes
-@import "trumps.shame";
+@import "trumps/shame";
 
 // Overrides, helpers and utilities
-@import "trumps.helpers";
+@import "trumps/helpers";
