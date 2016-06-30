@@ -15,9 +15,9 @@
 
 // Generic
 // Normalize should sit here.
-@import "generic/normalize.scss";
-@import "generic/reset.scss"; // Can this be removed, or moved into base.scss ?
-@import "generic/print.scss";
+@import "generic/normalize";
+@import "generic/reset"; // Can this be removed, or moved into base.scss ?
+@import "generic/print";
 
 // Global styles
 @import "base/base.scss";
