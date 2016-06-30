@@ -1,4 +1,4 @@
-# GOV.UK Template, Toolkit & Elements SCSS Refactor
+# GOV.UK template, GOV.UK frontend toolkit & GOV.UK elements SCSS refactor
 
 ---
 
@@ -12,40 +12,17 @@ The purpose of this:
 
 Things to do:
 
-Use BEM
-Use Normalize
-
-Remove duplicate resets
-Compare Normalize to GOV.UK base styles and elements reset
-
-Use scss comments // not css comments /* */
-
-Use single-level-deep classes, reduce nesting
-Avoid qualifying
-Avoid type selectors
-
-
-Ideally, it will work like this:
+* Use BEM as a naming convention
+* Use Normalize
+* Remove duplicate resets (compare Normalize to GOV.UK template base styles and GOV.UK elements reset)
+* Use single-level-deep classes, reduce nesting
+* Reduce the size of the codebase
+* Remove CSS which isn't being used, remove bloat and waste
+* Add documentation for each layer
 
 ---
 
-Questions:
-
-Names for sizes of things?
-for example
-
-    .button--big or .button--large
-    .font-small or .font-alpha
-
-Do we want to use full words or abbreviations?
-for example
-
-    .btn vs .button
-    .nav vs .navigation
-
---
-
-The structure of the /scss/ folder aims enable css to be written in specificity order.
+The files in assets/scss have been ordered following ITCSS principles:
 
 ### Settings
 
@@ -78,21 +55,22 @@ h1 - h6, basic links, lists
 
 ### Objects
 
-We will work up to having this layer!!
-This is the objects layer, put the media object in here.
+This layer is optional.
+Aim to work towards adding this layer.
 
+This is the objects layer, put the media object in here.
 Try to create a generic list object
 
     .ui-list {}
     .ui-list-item {}
 
-Choose agnostic names
+Choose agnostic names.
 
 ### Components
 
 Fully designed chunks of UI
 Private mixins sit in relevant file
-This is where the ui-list becomes a product list
+This is where the ui-list (in the objects layer above) becomes a product list
 
     .products-list {}
     .products-list__item {}
@@ -107,20 +85,16 @@ e.g. helper class
       width: 50% !important;
     }
 
-This is the most specific.
+This is the most specific layer.
 
 We are progressively adding and never undoing.
 Causes rules to trickle together and we are adding on layers, not undoing.
-Global styles happen early,
 
-We need a way of making a familiar environment from people.
-
-Reduce the size of the codebase.
-Remove CSS which isn't being used, remove bloat and waste.
+------------------------------------------------------------------------------------------
 
 ### ITCSS Principles:
 
-- Order stylesheets from generic to specific, this helps you manage the cascage
+- Order stylesheets from generic to specific, this helps you manage the cascade
 - You're also then doing less overriding as you move further down the set of stylesheets
 - Manages source order and makes it specificity based
 - Filters explicitness
@@ -137,14 +111,20 @@ Remove CSS which isn't being used, remove bloat and waste.
 - Add extra layers as you need
 - Media queries sit with the rules that they affect
 
-
-
 ------------------------------------------------------------------------------------------
 
 ### Other things to think about
 
-- What to do with the font files?
+- Can we reduce the size of the font files?
 - Can we fallback to PNGs in template/images and instead use SVG?
 - Print stylesheet & how do the mixins for this work?
 - What units do we want to use rem/em/px a combo? At the moment we use 15px, this means we can't vertically align things properly
+- Names for sizes of things?
 
+    .button--big or .button--large
+    .font-small or .font-alpha
+
+- Do we want to use full words or abbreviations?
+
+    .btn vs .button
+    .nav vs .navigation
