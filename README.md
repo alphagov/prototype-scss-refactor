@@ -20,6 +20,8 @@ Things to do:
 * Reduce the size of the codebase
 * Remove CSS which isn't being used, remove bloat and waste
 * Add documentation for each layer
+* Remove placeholders % where used
+* Decide on use of prefixes o- object ?
 
 ---
 

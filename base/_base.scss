@@ -22,6 +22,7 @@ html {
   font-family: $NTA-Light;
 
   // Set background colour to match footer background
+  // This will need to be overridden for anyone not wanting a GOV.UK theme footer (move to theme layer?)
   background-color: $footer-background;
   // Force the scrollbar to always display in IE10/11
   -ms-overflow-style: scrollbar;
@@ -48,6 +49,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 
 /* Links
    ========================================================================== */
