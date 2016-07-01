@@ -1,7 +1,10 @@
-// Refactor:
+// Refactoring:
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/design-patterns/_alpha-beta.scss#L50
 
-@mixin phase-tag($state: alpha) {
+// Usage:
+// <strong class="c-phase-tag c-phase-tag--alpha">ALPHA</strong>
+
+.#{$govuk-namespace}c-phase-tag {
   @include inline-block;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
@@ -12,18 +15,12 @@
   text-decoration: none;
 
   color: $white;
-  @if $state == alpha {
-    background-color: $alpha-colour;
-  } @else if $state == beta {
-    background-color: $beta-colour;
-  }
 }
 
-// TODO: REFACTOR
-.#{$govuk-namespace}-phase-tag--alpha {
-  @include phase-tag($state: alpha);
+.#{$govuk-namespace}c-phase-tag--alpha {
+  background-color: $alpha-colour;
 }
 
-.#{$govuk-namespace}-phase-tag--beta {
-  @include phase-tag($state: beta);
+.#{$govuk-namespace}c-phase-tag--beta {
+  background-color: $beta-colour;
 }
