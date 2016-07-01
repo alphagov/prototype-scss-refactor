@@ -2,16 +2,16 @@
 // https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/design-patterns/_breadcrumbs.scss
 // .breadcrumbs
 
-.#{$govuk-namespace}-breadcrumb {
+.#{$govuk-namespace}breadcrumb {
   padding-top: 0.75em;
   padding-bottom: 0.75em;
 }
 
-.#{$govuk-namespace}-breadcrumb__list {
+.#{$govuk-namespace}breadcrumb__list {
   @extend %contain-floats;
 }
 
-.#{$govuk-namespace}-breadcrumb__list-item {
+.#{$govuk-namespace}breadcrumb__list-item {
   @include core-16;
   float: left;
 
@@ -32,11 +32,11 @@
   padding-left: 0.9em;
 }
 
-.#{$govuk-namespace}-breadcrumb__list-item a {
+.#{$govuk-namespace}breadcrumb__list-item a {
   color: $text-colour;
 }
 
-.#{$govuk-namespace}-breadcrumb__list-item--first {
+.#{$govuk-namespace}breadcrumb__list-item--first {
   background-image: none;
   margin-left: 0;
   padding-left: 0;

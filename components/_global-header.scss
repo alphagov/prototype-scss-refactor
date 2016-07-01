@@ -266,10 +266,10 @@
 }
 
 // TODO: REFACTOR
-.#{$govuk-namespace}-global-header {
+.#{$govuk-namespace}global-header {
 }
 
-.#{$govuk-namespace}-global-header__divider {
+.#{$govuk-namespace}global-header__divider {
   height: 10px;
   background-color: $govuk-blue;
   @include ie-lte(8) {

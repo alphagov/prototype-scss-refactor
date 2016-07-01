@@ -131,7 +131,7 @@
   }
 }
 
-.#{$govuk-namespace}-button {
+.#{$govuk-namespace}button {
   @include button ($button-colour);
 
   @include box-sizing (border-box);
@@ -152,7 +152,7 @@
   }
 }
 
-.#{$govuk-namespace}-button--disabled {
+.#{$govuk-namespace}button--disabled {
   background: $button-colour;
 
   &:focus {
@@ -161,7 +161,7 @@
 }
 
 // TODO: Think of sensible names for button modifiers
-.#{$govuk-namespace}-button--get-started {
+.#{$govuk-namespace}button--get-started {
   @include bold-24;
 
   background-image: file-url("icon-pointer.png");
