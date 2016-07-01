@@ -4,61 +4,55 @@
 // Typography
 // ==========================================================================
 
-// Increase the base font size to 19px for the main content area
-// Using the core-19 mixin from the govuk_toolkit _typography.scss file
 
-main {
-  @include core-19;
-  -webkit-font-smoothing: antialiased;
-}
 
 // Core font sizes
-.font-xxlarge {
+.#{$govuk-namespace}font-xxlarge {
   @include core-80;
 }
 
-.font-xlarge {
+.#{$govuk-namespace}font-xlarge {
   @include core-48;
 }
 
-.font-large {
+.#{$govuk-namespace}font-large {
   @include core-36;
 }
 
-.font-medium {
+.#{$govuk-namespace}font-medium {
   @include core-24;
 }
 
-.font-small {
+.#{$govuk-namespace}font-small {
   @include core-19;
 }
 
-.font-xsmall {
+.#{$govuk-namespace}font-xsmall {
   @include core-16;
 }
 
 // Bold font sizes
-.bold-xxlarge {
+.#{$govuk-namespace}bold-xxlarge {
   @include bold-80();
 }
 
-.bold-xlarge {
+.#{$govuk-namespace}bold-xlarge {
   @include bold-48();
 }
 
-.bold-large {
+.#{$govuk-namespace}bold-large {
   @include bold-36();
 }
 
-.bold-medium {
+.#{$govuk-namespace}bold-medium {
   @include bold-24();
 }
 
-.bold-small {
+.#{$govuk-namespace}bold-small {
   @include bold-19();
 }
 
-.bold-xsmall {
+.#{$govuk-namespace}bold-xsmall {
   @include bold-16();
 }
 
@@ -67,7 +61,7 @@ main {
 // Spacing is set in em, using the px to em function in the elements _helpers.scss file
 
 // Headings
-.heading-xlarge {
+.#{$govuk-namespace}heading-xlarge {
   @include bold-48();
 
   margin-top: em(15, 32);
@@ -87,7 +81,7 @@ main {
 
 }
 
-.heading-large {
+.#{$govuk-namespace}heading-large {
   @include bold-36();
 
   margin-top: em(25, 24);
@@ -107,7 +101,7 @@ main {
 
 }
 
-.heading-medium {
+.#{$govuk-namespace}heading-medium {
   @include bold-24();
 
   margin-top: em(25, 20);
@@ -120,7 +114,7 @@ main {
 
 }
 
-.heading-small {
+.#{$govuk-namespace}heading-small {
   @include bold-19();
 
   margin-top: em(10, 16);
@@ -132,54 +126,42 @@ main {
 
 }
 
-// Text
-p {
-  margin-top: em(5, 16);
-  margin-bottom: em(20, 16);
-
-  @include media(tablet) {
-    margin-top: em(5);
-    margin-bottom: em(20);
-  }
-
-}
-
 // Lede, or intro text
-.lede {
+.#{$govuk-namespace}lede {
   @include core-24;
 }
 
 // Set a max-width for text blocks
 // Less than 75 characters per line of text
-.text {
+.#{$govuk-namespace}text {
   max-width: 30em;
 }
 
-.text-secondary {
+.#{$govuk-namespace}text-secondary {
   color: $secondary-text-colour;
 }
 
 // Link styles
-.link {
+.#{$govuk-namespace}link {
   color: $link-colour;
   text-decoration: underline;
 }
 
-.link:visited {
+.#{$govuk-namespace}link:visited {
   color: $link-visited-colour;
 }
 
-.link:hover {
+.#{$govuk-namespace}link:hover {
   color: $link-hover-colour;
 }
 
-.link:active {
+.#{$govuk-namespace}link:active {
   color: $link-colour;
 }
 
 // Back link styles - with left pointing arrow
 
-.link-back {
+.#{$govuk-namespace}link-back {
   @include inline-block;
   position: relative;
 
@@ -229,7 +211,7 @@ p {
 }
 
 // Code styles
-.code {
+.#{$govuk-namespace}code {
   color: $text-colour;
   background-color: $highlight-colour;
 
