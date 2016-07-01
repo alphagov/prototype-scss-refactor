@@ -13,6 +13,7 @@ The purpose of this:
 Things to do:
 
 * Use BEM as a naming convention
+* BEM stands for `Block__Element--Modifier`, not `Block__Element__Element--Modifier`. So, avoid multiple element level naming.
 * Use Normalize
 * Remove duplicate resets (compare Normalize to GOV.UK template base styles and GOV.UK elements reset)
 * Use single-level-deep classes, reduce nesting
@@ -89,6 +90,52 @@ This is the most specific layer.
 
 We are progressively adding and never undoing.
 Causes rules to trickle together and we are adding on layers, not undoing.
+
+------------------------------------------------------------------------------------------
+
+### Namespaces:
+
+* Decide on use of [namespaces/prefixes](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) o- object ?
+* Do we want to use a c- prefix for components?
+
+Suggestion:
+
+Component          c-               c-message-bar
+Object (layout)    o-               o-site-width-container
+States             is-              is-visible
+                   has-             has-loaded
+JS hooks           js-              js-enabled
+
+For JS hooks, we currently use
+
+    .js-enabled .js-hidden, would this make more sense as
+    .js-enabled .is-hidden { display: none; }
+
+### States:
+
+    <!-- standalone state hook -->
+    <div class="c-card is-active">
+        […]
+    </div>
+
+    <!-- or BEM modifier -->
+    <div class="c-card c-card--is-active">
+        […]
+    </div>
+
+The advantage of the standalone class is that it makes it easy to use JavaScript to apply generic state hooks to any component.
+
+https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/
+
+https://github.com/chris-pearce/css-guidelines#state-hooks
+
+    .is-active
+    .has-loaded
+    .is-visible
+    .is-hidden
+    .is-disabled
+    .is-expanded
+    .is-collapsed
 
 ------------------------------------------------------------------------------------------
 
