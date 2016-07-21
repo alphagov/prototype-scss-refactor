@@ -2,41 +2,36 @@
 // https://github.com/alphagov/govuk_elements/blob/master/public/sass/elements/_details.scss
 // details
 
-details {
+.#{$govuk-namespace}#{$govuk-component-prefix}details {
   display: block;
 
-  summary {
+  &:__summary {
     display: inline-block;
+    position: relative;
+
+    margin-bottom: em(5); // todo: use consistent units
+
     color: $govuk-blue;
     cursor: pointer;
-    position: relative;
-    margin-bottom: em(5);
 
     &:hover {
       color: $link-hover-colour;
     }
 
     &:focus {
-      outline: 3px solid $focus-colour;
+      outline: $width-outline solid $focus-colour;
     }
   }
 
   // Underline only summary text (not the arrow)
-  .summary {
-    text-decoration: underline;
+  &:__summary-text {
+   text-decoration: underline;
   }
 
   // Match fallback arrow spacing with -webkit default
-  .arrow {
-    margin-right: .35em;
+  &:__arrow {
+    margin-right: .35em; // todo: use consistent units
     font-style: normal;
   }
 
-}
-
-// TODO: REFACTOR
-.#{$govuk-namespace}details {
-}
-
-.#{$govuk-namespace}details__arrow {
 }
