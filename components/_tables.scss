@@ -2,21 +2,21 @@
 // https://github.com/alphagov/govuk_elements/blob/master/public/sass/elements/_tables.scss
 // .table-font-xsmall
 
-.table__header-numeric {
+.#{$govuk-namespace}table__header-numeric {
   text-align: right;
 }
 
-.table__cell-numeric {
+.#{$govuk-namespace}table__cell-numeric {
   @include core-16($tabular-numbers: true);
   text-align: right;
 }
 
-.table__header--xsmall {
+.#{$govuk-namespace}table__header--xsmall {
   @include bold-16;
   padding: em(12, 16) em(20, 16) em(9, 16) 0;
 }
 
-.table__cell--xsmall {
+.#{$govuk-namespace}table__cell--xsmall {
   @include core-16;
   padding: em(12, 16) em(20, 16) em(9, 16) 0;
 }
