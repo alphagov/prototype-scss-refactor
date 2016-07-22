@@ -7,27 +7,28 @@
 @import "tools/conditionals";
 @import "tools/css3";
 @import "tools/device-pixels";
-@import "tools/grid-layout";
 @import "tools/print";
-@import "tools/shims";
+@import "tools/pxtoem";
 @import "tools/typography";
 @import "tools/url-helpers";
 
-// Generic
+// Generic - Reset
 @import "generic/normalize";
 @import "generic/reset";
 // Should the print stylesheet sit here?
 @import "generic/print";
 
-// Global styles
-@import "base/base";
-@import "base/tables";
-@import "base/form-elements";
-
-// HTML Elements
+// Unclassed HTML elements (not to be confused with GOV.UK elements)
+@import "elements/page";
+@import "elements/typography";
+@import "elements/form-elements";
+@import "elements/links";
+@import "elements/lists";
+@import "elements/tables";
 
 // Objects
-@import "objects.grid-layout";
+@import "objects/wrapper";
+@import "objects/grid-layout";
 
 // Components
 // It should be possible to reorder these without affecting the appearance of any components
@@ -37,7 +38,6 @@
 @import "components/buttons";
 @import "components/details";
 @import "components/external-links";
-@import "components/form";
 @import "components/form-block-labels";
 @import "components/form-date";
 @import "components/form-validation";
@@ -54,8 +54,18 @@
 @import "components/tables";
 @import "components/typography";
 
+// Add a scope layer
+// This can be used for cms content (e.g. govuk-govspeak)
+// @import "scope/govspeak"
+
 // Hacks and fixes
 @import "trumps/shame";
 
 // Overrides, helpers and utilities
 @import "trumps/helpers";
+
+@import "trumps/shame";
+
+@import "trumps/utility-clearfix";
+@import "trumps/utility-inline-block";
+@import "trumps/utility-visually-hidden";
