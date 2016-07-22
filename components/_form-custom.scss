@@ -1,0 +1,74 @@
+.#{$govuk-namespace}#{$govuk-component-prefix}form-custom {
+
+  &__label {
+
+    @include media(mobile) {
+      float: none;
+      clear: left;
+    }
+
+    // By default, block labels stack vertically
+    float: left;
+    display: block;
+
+    position: relative;
+
+    background: $panel-colour;
+    border: 1px solid $panel-colour;
+    padding: (18px $gutter $gutter-half $gutter * 1.8);
+
+    margin-bottom: 10px;
+    cursor: pointer; // Encourage clicking on block labels
+  }
+
+  // To stack horizontally, use .--inline, to sit block labels next to each other
+  &__label--inline {
+    clear: none;
+    @include media (tablet) {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+
+  // States
+  // Using .selected here as this is set by selection-buttons.js
+  &__label.selected,
+  // Ideally we'd use a state class, e.g. .is-selected
+  &__label.is-selected {
+    background: $white;
+    border-color: $black;
+  }
+
+  // Using .focused here as this is set by selection-buttons.js
+  &__label.focused,
+  // Ideally we'd use a state class, e.g. .has-focus, or is-focused
+  &__label.is-focused {
+    outline: $width-focus-outline solid $focus-colour;
+  }
+
+  // todo: input vs.control
+  // Absolutely position inputs within label, to allow text to wrap
+  &__input {
+    position: absolute;
+    top: 15px;
+    left: $gutter-half;
+    cursor: pointer;
+    margin: 0;
+    width: 29px;
+    height: 29px;
+
+    @include ie(8) {
+      top: 12px;
+    }
+
+    // Change border on hover
+    &:hover {
+      border-color: $black;
+    }
+
+    &--last {
+      margin-bottom: 0;
+    }
+
+  }
+}
