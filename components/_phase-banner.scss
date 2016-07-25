@@ -6,10 +6,10 @@
 //   <div class="c-phase-banner__content">
 //     <strong class="c-phase-tag c-phase-tag--alpha">ALPHA</strong>
 //     <span class="c-phase-banner__text">You can help us improve this app by completing our <a href="https://www.surveymonkey.co.uk/r/2MZRS9H">5 minute survey</a>.</span>
-//   </p>
+//   </div>
 // </div>
 
-.#{$govuk-namespace}#{$prefix-component}-phase-banner {
+.#{$govuk-namespace}#{$prefix-component}phase-banner {
   padding: 10px 0 8px;
 
   @include media(tablet) {
