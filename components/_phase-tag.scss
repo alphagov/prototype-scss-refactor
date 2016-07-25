@@ -4,7 +4,7 @@
 // Usage:
 // <strong class="c-phase-tag c-phase-tag--alpha">ALPHA</strong>
 
-.#{$govuk-namespace}c-phase-tag {
+.#{$govuk-namespace}#{$prefix-component}-phase-tag {
   @include inline-block;
   margin: 0 8px 0 0;
   padding: 2px 5px 0;
@@ -15,12 +15,13 @@
   text-decoration: none;
 
   color: $white;
-}
 
-.#{$govuk-namespace}c-phase-tag--alpha {
-  background-color: $alpha-colour;
-}
+  &--alpha {
+    background-color: $alpha-colour;
+  }
 
-.#{$govuk-namespace}c-phase-tag--beta {
-  background-color: $beta-colour;
+  &--beta {
+    background-color: $beta-colour;
+  }
+
 }

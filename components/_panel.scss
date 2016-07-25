@@ -4,7 +4,7 @@
 // Panels
 // ==========================================================================
 
-.panel {
+.#{$govuk-namespace}#{$prefix-component}-panel {
   @include box-sizing(border-box);
   @extend %contain-floats;
   clear: both;

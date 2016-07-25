@@ -266,13 +266,5 @@
 }
 
 // TODO: REFACTOR
-.#{$govuk-namespace}global-header {
-}
-
-.#{$govuk-namespace}global-header__divider {
-  height: 10px;
-  background-color: $govuk-blue;
-  @include ie-lte(8) {
-    font-size: 0;
-  }
+.#{$govuk-namespace}#{$prefix-component}global-header {
 }

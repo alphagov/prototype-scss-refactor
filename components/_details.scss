@@ -2,10 +2,10 @@
 // https://github.com/alphagov/govuk_elements/blob/master/public/sass/elements/_details.scss
 // details
 
-.#{$govuk-namespace}#{$govuk-component-prefix}details {
+.#{$govuk-namespace}#{$prefix-component}details {
   display: block;
 
-  &:__summary {
+  &__summary {
     display: inline-block;
     position: relative;
 
@@ -24,12 +24,12 @@
   }
 
   // Underline only summary text (not the arrow)
-  &:__summary-text {
+  &__summary-text {
    text-decoration: underline;
   }
 
   // Match fallback arrow spacing with -webkit default
-  &:__arrow {
+  &__arrow {
     margin-right: .35em; // todo: use consistent units
     font-style: normal;
   }
