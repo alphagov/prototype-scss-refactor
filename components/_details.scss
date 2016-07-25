@@ -19,7 +19,7 @@
     }
 
     &:focus {
-      outline: $width-outline solid $focus-colour;
+      outline: $width-focus-outline solid $focus-colour;
     }
   }
 
