@@ -8,7 +8,7 @@
   padding-bottom: 0.75em;
 
   &breadcrumb__list {
-    @extend %contain-floats;
+    @include clearfix;
   }
 
   &breadcrumb__list-item {

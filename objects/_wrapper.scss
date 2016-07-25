@@ -23,9 +23,8 @@ $site-width: 960px;
 
 .#{$govuk-namespace}o-wrapper {
   @include o-wrapper;
-  // todo: create a utility for clearfix
-  @extend %contain-floats;
 
+  @include clearfix;
   padding-bottom: $gutter;
 
   @include media(desktop) {

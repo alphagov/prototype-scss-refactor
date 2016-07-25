@@ -6,7 +6,8 @@
 
 .#{$govuk-namespace}#{$prefix-component}-panel {
   @include box-sizing(border-box);
-  @extend %contain-floats;
+  @include clearfix;
+
   clear: both;
   border-left-style: solid;
   border-color: $border-colour;

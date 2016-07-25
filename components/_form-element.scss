@@ -1,8 +1,8 @@
-.#{$govuk-namespace}#{$govuk-component-prefix}form-element {
+.#{$govuk-namespace}#{$prefix-component}form-element {
 
   @include box-sizing(border-box);
 
-  @extend %contain-floats;
+  @include clearfix;
 
   // This is standard form label
   &__label {
@@ -52,7 +52,7 @@
 
 // Default radio buttons and checkboxes - not sure about these, own components, or .form-component--modifiers?
 // Using component names but leaving in this file for now
-.#{$govuk-namespace}#{$govuk-component-prefix}form-element-radio {
+.#{$govuk-namespace}#{$prefix-component}form-element-radio {
   display: block;
   margin: 10px 0;
 
@@ -64,7 +64,7 @@
 }
 
 // Checkboxes
-.#{$govuk-namespace}#{$govuk-component-prefix}form-element-checkbox {
+.#{$govuk-namespace}#{$prefix-component}form-element-checkbox {
   display: block;
   margin: $gutter-half 0;
 
