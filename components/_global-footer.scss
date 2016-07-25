@@ -36,7 +36,7 @@
   }
 
   .footer-meta {
-    @extend %contain-floats;
+    @include clearfix;
     padding-bottom: 60px;
     clear: both;
     font-size: 0;

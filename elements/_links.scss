@@ -18,13 +18,13 @@ a:active {
 }
 
 // Delete this and instead require a class
-a[rel="external"] {
-  @include external-link-default;
-  @include external-link-16;
-  @include media(tablet) {
-    @include external-link-19;
-  }
-}
+// a[rel="external"] {
+//   @include external-link-default;
+//   @include external-link-16;
+//   @include media(tablet) {
+//     @include external-link-19;
+//   }
+// }
 
 // https://raw.githubusercontent.com/alphagov/govuk_template/master/source/assets/stylesheets/_accessibility.scss
 /* Give a strong clear visual idea as to what is currently in focus */

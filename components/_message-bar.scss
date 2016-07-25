@@ -26,12 +26,6 @@
 //   </div>
 // </div>
 
-
-@import "settings/colours";
-@import "settings/typography";
-@import "objects/grid-layout";
-
-
 .#{$govuk-namespace}#{$prefix-component}-message-bar {
   background-color: $light-blue-25;
   // TODO: Use consistent units

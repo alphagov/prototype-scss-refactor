@@ -16,7 +16,8 @@
 // Use .grid-row to define a row for grid columns to sit in
 // .o-layout?
 .grid-row {
-  @include %contain-floats;
+  // Should we use a utility class, or OK to use a mixin here?
+  @include clearfix;
   margin: 0 (-$gutter-half);
 }
 

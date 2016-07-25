@@ -1,15 +1,3 @@
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
-  @include ie-lte(7) {
-    zoom: 1;
-  }
-}
-
 .u-cf {
   @include clearfix;
 }
