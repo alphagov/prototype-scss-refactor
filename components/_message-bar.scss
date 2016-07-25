@@ -32,14 +32,15 @@
 @import "objects/grid-layout";
 
 
-.#{$govuk-namespace}-message-bar {
+.#{$govuk-namespace}#{$prefix-component}-message-bar {
   background-color: $light-blue-25;
+  // TODO: Use consistent units
   padding-top: 10px;
   padding-bottom: 10px;
-}
 
-.#{$govuk-namespace}-message-bar__text {
-  @include core-16;
+  &__text {
+    @include core-16;
+  }
 }
 
 // Let's put this in utilities when decide where they sit in the layer structure
