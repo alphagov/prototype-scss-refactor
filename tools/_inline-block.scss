@@ -1,10 +1,6 @@
-// Inline block
-// ==========================================================================
 // https://raw.githubusercontent.com/alphagov/govuk_frontend_toolkit/master/stylesheets/_shims.scss
 // Cross-browser shims
 // Ways of normalising properties across browsers.
-
-@import "conditionals";
 
 // From: https://blog.mozilla.org/webdev/2009/02/20/cross-browser-inline-block/
 
@@ -35,8 +31,4 @@
       height: $min-height;
     }
   }
-}
-
-.u-inline-block{
-  @include inline-block;
 }
