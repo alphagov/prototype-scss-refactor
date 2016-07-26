@@ -1,9 +1,6 @@
 // Refactor:
 // https://github.com/alphagov/govuk_elements/blob/master/public/sass/elements/_panels.scss
 
-// Panels
-// ==========================================================================
-
 .#{$govuk-namespace}#{$prefix-component}-panel {
   @include box-sizing(border-box);
   @include clearfix;
@@ -23,17 +20,17 @@
   :last-child {
     margin-bottom: 0;
   }
+
+  &--border-wide {
+    border-left-width: 10px;
+  }
+
+  &--border-narrow {
+    border-left-width: 5px;
+  }
 }
 
-.panel-border-wide {
-  border-left-width: 10px;
-}
-
-// Used to show the left edge of "toggled" content
-.panel-border-narrow {
-  border-left-width: 5px;
-}
-
+// These should be utility classes
 // Panels within form groups
 // By default, panels have 15px bottom margin
 .form-group .panel-border-narrow {
