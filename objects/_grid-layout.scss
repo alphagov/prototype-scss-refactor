@@ -15,10 +15,21 @@
 
 // Use .grid-row to define a row for grid columns to sit in
 // .o-layout?
-.grid-row {
+.#{$govuk-namespace}#{$prefix-object}grid-row {
   // Should we use a utility class, or OK to use a mixin here?
   @include clearfix;
+
   margin: 0 (-$gutter-half);
+}
+
+.#{$govuk-namespace}#{$prefix-object}grid-item {
+  @include box-sizing(border-box);
+
+  @include media(tablet) {
+    float: left;
+  }
+
+  padding: 0 $gutter-half;
 }
 
 // A mixin for a grid column
@@ -61,24 +72,7 @@
 
 // Use .grid-column to create a grid column with 15px gutter
 // By default grid columns break to become full width at tablet size
-.column-quarter,
-.column-one-quarter {
-  @include grid-column(1 / 4);
-}
 
-.column-half,
-.column-one-half {
-  @include grid-column(1 / 2);
-}
-
-.column-third,
-.column-one-third {
-  @include grid-column(1 / 3);
-}
-
-.column-two-thirds {
-  @include grid-column(2 / 3);
-}
 
 // An extendable selector to outdent to the full page-width
 // So that you can create elements that take up the gutters on the side of the
