@@ -28,80 +28,49 @@
   }
 }
 
-.icon {
+.#{$govuk-namespace}#{$prefix-component}icon {
   display: inline-block;
 
   background-position: 0 0;
   background-repeat: no-repeat;
-}
 
-// GOV.UK front end toolkit icons
-.icon-calendar {
-  @include icon(icon-calendar, 27, 27);
-}
+  &---calendar {
+    @include icon(icon-calendar, 27, 27);
+  }
 
-.icon-file-download {
-  @include icon(icon-file-download, 30, 39);
-}
+  &--file-download {
+    @include icon(icon-file-download, 30, 39);
+  }
 
-.icon-important {
-  @include icon(icon-important, 35, 35);
-}
+  &--important {
+    @include icon(icon-important, 35, 35);
+  }
 
-.icon-information {
-  @include icon(icon-information, 27, 27);
-}
+  &--information {
+    @include icon(icon-information, 27, 27);
+  }
 
-.icon-locator {
-  @include icon(icon-locator, 26, 36);
-}
+  &--locator {
+    @include icon(icon-locator, 26, 36);
+  }
 
-.icon-pointer {
-  @include icon(icon-pointer, 30, 19);
-}
+  &--pointer {
+    @include icon(icon-pointer, 30, 19);
+  }
 
-.icon-pointer-black {
-  @include icon(icon-pointer-black, 23, 23);
-}
+  &--pointer-black {
+    @include icon(icon-pointer-black, 23, 23);
+  }
 
-.icon-search {
-  @include icon(icon-search, 30, 22);
+  &--search {
+    @include icon(icon-search, 30, 22);
+  }
 }
 
 
 // GOV.UK step icons
 @for $i from 1 through 14 {
-  .icon-step-#{$i} {
-    @include icon(icon-step-#{$i}, 23, 23, icon-steps);
+  &--step-#{$i} {
+    @include icon(icon-step--#{$i}, 23, 23, icon-steps);
   }
-}
-
-// Propose replacing step icons with circles
-.circle {
-  display: inline-block;
-  @include border-radius(50%);
-
-  background: $black;
-  color: $white;
-
-  // Allow uppercase letters in font stack variable names
-  // scss-lint:disable NameFormat
-  font-family: $NTA-Light-Tabular;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-}
-
-// All step circles are 24px x 24px
-.circle-step {
-  min-width: 24px;
-  min-height: 24px;
-  line-height: 24px;
-}
-
-.circle-step-large {
-  font-size: 19px;
-  min-width: 38px;
-  min-height: 38px;
-  line-height: 38px;
 }
