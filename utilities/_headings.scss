@@ -69,20 +69,20 @@
 }
 
 // I'm not using a --modifier for the variants here
-// as we don't have a base .text-heading block
-.#{$govuk-namespace}text-heading-xxlarge {
+// as we don't have a base .heading block
+.#{$govuk-namespace}#{$prefix-utility}heading-xxlarge {
   @include heading-80;
 }
-.#{$govuk-namespace}text-heading-xlarge {
+.#{$govuk-namespace}#{$prefix-utility}heading-xlarge {
   @include heading-48;
 }
-.#{$govuk-namespace}text-heading-large {
+.#{$govuk-namespace}#{$prefix-utility}heading-large {
   @include heading-36
 }
-.#{$govuk-namespace}text-heading-medium {
+.#{$govuk-namespace}#{$prefix-utility}heading-medium {
   @include heading-27;
 }
-.#{$govuk-namespace}text-heading-small {
+.#{$govuk-namespace}#{$prefix-utility}heading-small {
   @include heading-24;
 }
 
@@ -103,7 +103,7 @@
 //     @include heading-24();
 
 //     display: block;
-//     color: $secondary-text-colour;
+//     color: $secondary-#{$prefix-utility}colour;
 //   }
 
 // }
