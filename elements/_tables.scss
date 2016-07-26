@@ -20,18 +20,6 @@ table {
 
   th {
     font-weight: 700;
-    // Right align headings for numeric content
-    // TODO: REMOVE .numeric as new table styles exist in _components/table.scss
-    // &.numeric {
-    //   text-align: right;
-    // }
   }
 
-  // Allow a qualifying element, only table data cells should use tabular numbers
-  // scss-lint:disable QualifyingElement
-  // TODO: REMOVE .numeric as new table styles exist in _components/table.scss
-  // td.numeric {
-  //   @include core-16($tabular-numbers: true);
-  //   text-align: right;
-  // }
 }
