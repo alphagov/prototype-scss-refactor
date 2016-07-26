@@ -75,3 +75,8 @@ strong {
 html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup, nav, section {
   vertical-align: baseline;
 }
+
+// Force images to be constrained by their parent grid items
+img {
+  max-width: 100%;
+}
