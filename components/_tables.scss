@@ -4,30 +4,24 @@
 
 .#{$govuk-namespace}#{$prefix-component}-table {
   &__cell {
-    @include core-19;
+    &--numeric {
+      @include core-19($tabular-numbers: true);
+      text-align: right;
+    }
+    &--xsmall {
+      @include core-16;
+      padding: em(12, 16) em(20, 16) em(9, 16) 0;
+    }
   }
+
   &__header {
     @include bold-19;
-  }
-}
-
-.#{$govuk-namespace}#{$prefix-component}-table--xsmall {
-  &__cell {
-    padding: em(12, 16) em(20, 16) em(9, 16) 0;
-  }
-  &__header {
-    @include bold-16;
-    padding: em(12, 16) em(20, 16) em(9, 16) 0;
-  }
-}
-
-.#{$govuk-namespace}#{$prefix-component}-table--numeric {
-  &__cell {
-    @include core-16($tabular-numbers: true);
-    text-align: right;
-  }
-
-  &__header {
-    text-align: right;
+    &--numeric {
+      text-align: right;
+    }
+    &--xsmall {
+      @include bold-16;
+      padding: em(12, 16) em(20, 16) em(9, 16) 0;
+    }
   }
 }
