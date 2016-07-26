@@ -7,11 +7,11 @@
   padding-top: 0.75em;
   padding-bottom: 0.75em;
 
-  &breadcrumb__list {
+  &__list {
     @include clearfix;
   }
 
-  &breadcrumb__list-item {
+  &__list-item {
     @include core-16;
     float: left;
 
@@ -32,11 +32,11 @@
     padding-left: 0.9em;
   }
 
-  &breadcrumb__link {
+  &__link {
     color: $text-colour;
   }
 
-  &breadcrumb__list-item--first {
+  &__list-item--first {
     background-image: none;
     margin-left: 0;
     padding-left: 0;
