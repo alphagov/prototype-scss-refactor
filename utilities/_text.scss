@@ -44,6 +44,7 @@
   @include bold-27;
 }
 
+.#{$govuk-namespace}#{$prefix-utility}text-lede,
 .#{$govuk-namespace}#{$prefix-utility}text-medium {
   @include bold-24;
 }
