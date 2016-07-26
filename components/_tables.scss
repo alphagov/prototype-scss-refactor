@@ -2,7 +2,7 @@
 // https://github.com/alphagov/govuk_elements/blob/master/public/sass/elements/_tables.scss
 // .table-font-xsmall
 
-.#{$govuk-namespace}#{$prefix-component}-table {
+.#{$govuk-namespace}#{$prefix-component}table {
   &__cell {
     &--numeric {
       @include core-19($tabular-numbers: true);
