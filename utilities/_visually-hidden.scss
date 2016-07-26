@@ -1,5 +1,5 @@
 // Hide, but not for screenreaders
-.u-visually-hidden {
+.#{$govuk-namespace}#{$prefix-utility}visually-hidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);

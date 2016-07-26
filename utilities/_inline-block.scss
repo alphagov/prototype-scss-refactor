@@ -1,6 +1,3 @@
-// Inline block
-// ==========================================================================
-
-.u-inline-block{
+.#{$govuk-namespace}#{$prefix-utility}inline-block{
   @include inline-block;
 }
