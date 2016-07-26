@@ -1,0 +1,134 @@
+@mixin heading-80($tabular-numbers: false) {
+  @include core-80($tabular-numbers: $tabular-numbers);
+
+  display: block;
+
+  padding-top: 8px;
+  padding-bottom: 7px;
+
+  @include media(tablet) {
+    padding-top: 6px;
+    padding-bottom: 14px;
+  }
+}
+
+@mixin heading-48($tabular-numbers: false) {
+  @include core-48($tabular-numbers: $tabular-numbers);
+
+  display: block;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include media(tablet) {
+    padding-top: 7px;
+    padding-bottom: 13px;
+  }
+}
+
+@mixin heading-36($tabular-numbers: false) {
+  @include core-36($tabular-numbers: $tabular-numbers);
+
+  display: block;
+
+  padding-top: 8px;
+  padding-bottom: 7px;
+
+  @include media(tablet) {
+    padding-top: 6px;
+    padding-bottom: 9px;
+  }
+}
+
+@mixin heading-27($tabular-numbers: false) {
+  @include core-27($tabular-numbers: $tabular-numbers);
+
+  display: block;
+
+  padding-top: 8px;
+  padding-bottom: 7px;
+
+  @include media(tablet) {
+    padding-top: 4px;
+    padding-bottom: 6px;
+  }
+}
+
+@mixin heading-24($tabular-numbers: false) {
+  @include core-24($tabular-numbers: $tabular-numbers);
+
+  display: block;
+
+  padding-top: 9px;
+  padding-bottom: 6px;
+
+  @include media(tablet) {
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+}
+
+// I'm not using a --modifier for the variants here
+// as we don't have a base .text-heading block
+.#{$govuk-namespace}text-heading-xxlarge {
+  @include heading-80;
+}
+.#{$govuk-namespace}text-heading-xlarge {
+  @include heading-48;
+}
+.#{$govuk-namespace}text-heading-large {
+  @include heading-36
+}
+.#{$govuk-namespace}text-heading-medium {
+  @include heading-27;
+}
+.#{$govuk-namespace}text-heading-small {
+  @include heading-24;
+}
+
+// These are the GOV.UK elements version of these headings
+// TODO: Figure out how to combine utility classes for these
+// .#{$govuk-namespace}heading-large {
+//   @include bold-36();
+
+//   margin-top: em(25, 24);
+//   margin-bottom: em(10, 24);
+
+//   @include media(tablet) {
+//     margin-top: em(45, 36);
+//     margin-bottom: em(20, 36);
+//   }
+
+//   .heading-secondary {
+//     @include heading-24();
+
+//     display: block;
+//     color: $secondary-text-colour;
+//   }
+
+// }
+
+// .#{$govuk-namespace}heading-medium {
+//   @include bold-24();
+
+//   margin-top: em(25, 20);
+//   margin-bottom: em(10, 20);
+
+//   @include media(tablet) {
+//     margin-top: em(45, 24);
+//     margin-bottom: em(20, 24);
+//   }
+
+// }
+
+// .#{$govuk-namespace}heading-small {
+//   @include bold-19();
+
+//   margin-top: em(10, 16);
+//   margin-bottom: em(5, 16);
+
+//   @include media(tablet) {
+//     margin-top: em(20, 19);
+//   }
+
+// }
