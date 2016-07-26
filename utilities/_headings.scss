@@ -1,89 +1,19 @@
-@mixin heading-80($tabular-numbers: false) {
-  @include core-80($tabular-numbers: $tabular-numbers);
-
-  display: block;
-
-  padding-top: 8px;
-  padding-bottom: 7px;
-
-  @include media(tablet) {
-    padding-top: 6px;
-    padding-bottom: 14px;
-  }
-}
-
-@mixin heading-48($tabular-numbers: false) {
-  @include core-48($tabular-numbers: $tabular-numbers);
-
-  display: block;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  @include media(tablet) {
-    padding-top: 7px;
-    padding-bottom: 13px;
-  }
-}
-
-@mixin heading-36($tabular-numbers: false) {
-  @include core-36($tabular-numbers: $tabular-numbers);
-
-  display: block;
-
-  padding-top: 8px;
-  padding-bottom: 7px;
-
-  @include media(tablet) {
-    padding-top: 6px;
-    padding-bottom: 9px;
-  }
-}
-
-@mixin heading-27($tabular-numbers: false) {
-  @include core-27($tabular-numbers: $tabular-numbers);
-
-  display: block;
-
-  padding-top: 8px;
-  padding-bottom: 7px;
-
-  @include media(tablet) {
-    padding-top: 4px;
-    padding-bottom: 6px;
-  }
-}
-
-@mixin heading-24($tabular-numbers: false) {
-  @include core-24($tabular-numbers: $tabular-numbers);
-
-  display: block;
-
-  padding-top: 9px;
-  padding-bottom: 6px;
-
-  @include media(tablet) {
-    padding-top: 6px;
-    padding-bottom: 4px;
-  }
-}
-
 // I'm not using a --modifier for the variants here
 // as we don't have a base .heading block
 .#{$govuk-namespace}#{$prefix-utility}heading-xxxlarge {
-  @include heading-80;
+  @include bold-80;
 }
 .#{$govuk-namespace}#{$prefix-utility}heading-xxlarge {
-  @include heading-48;
+  @include bold-48;
 }
 .#{$govuk-namespace}#{$prefix-utility}heading-xlarge {
-  @include heading-36
+  @include bold-36
 }
 .#{$govuk-namespace}#{$prefix-utility}heading-large {
-  @include heading-27;
+  @include bold-27;
 }
 .#{$govuk-namespace}#{$prefix-utility}heading-medium {
-  @include heading-24;
+  @include bold-24;
 }
 // We don't have this yet, but we probably need a heading-small
 // .#{$govuk-namespace}#{$prefix-utility}heading-small {
