@@ -70,24 +70,53 @@
 
 // I'm not using a --modifier for the variants here
 // as we don't have a base .heading block
-.#{$govuk-namespace}#{$prefix-utility}heading-xxlarge {
+.#{$govuk-namespace}#{$prefix-utility}heading-xxxlarge {
   @include heading-80;
 }
-.#{$govuk-namespace}#{$prefix-utility}heading-xlarge {
+.#{$govuk-namespace}#{$prefix-utility}heading-xxlarge {
   @include heading-48;
 }
-.#{$govuk-namespace}#{$prefix-utility}heading-large {
+.#{$govuk-namespace}#{$prefix-utility}heading-xlarge {
   @include heading-36
 }
-.#{$govuk-namespace}#{$prefix-utility}heading-medium {
+.#{$govuk-namespace}#{$prefix-utility}heading-large {
   @include heading-27;
 }
-.#{$govuk-namespace}#{$prefix-utility}heading-small {
+.#{$govuk-namespace}#{$prefix-utility}heading-medium {
   @include heading-24;
 }
+// We don't have this yet, but we probably need a heading-small
+// .#{$govuk-namespace}#{$prefix-utility}heading-small {
+//   @include heading-19;
+// }
 
 // These are the GOV.UK elements version of these headings
 // TODO: Figure out how to combine utility classes for these
+
+// Common heading sizes
+// Using the bold-xx mixins from the govuk_toolkit _typography.scss file
+// Spacing is set in em, using the px to em function in the elements _helpers.scss file
+
+// Headings
+// .#{$govuk-namespace}heading-xlarge {
+//   @include bold-48();
+
+//   margin-top: em(15, 32);
+//   margin-bottom: em(30, 32);
+
+//   @include media(tablet) {
+//     margin-top: em(30, 48);
+//     margin-bottom: em(60, 48);
+//   }
+
+//   &__context {
+//     @include heading-27();
+
+//     display: block;
+//     color: $secondary-text-colour;
+//   }
+
+// }
 // .#{$govuk-namespace}heading-large {
 //   @include bold-36();
 
