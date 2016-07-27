@@ -7,8 +7,6 @@
       clear: left;
     }
 
-    // By default, block labels stack vertically
-    float: left;
     display: block;
 
     position: relative;
@@ -46,9 +44,8 @@
     outline: $width-focus-outline solid $focus-colour;
   }
 
-  // todo: input vs.control
   // Absolutely position inputs within label, to allow text to wrap
-  &__input {
+  &__control {
     position: absolute;
     top: 15px;
     left: $gutter-half;
