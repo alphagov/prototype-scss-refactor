@@ -58,6 +58,9 @@
       top: 12px;
     }
 
+    // Don't add an outline here
+    outline: 0 !important;
+
     // Change border on hover
     &:hover {
       border-color: $black;
