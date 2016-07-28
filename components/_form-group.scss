@@ -48,6 +48,11 @@
     border: 2px solid $grey-1;
   }
 
+  // Used for native controls
+  &__native-control {
+    padding-right: 4px;
+  }
+
 }
 
 // Default radio buttons and checkboxes - not sure about these, own components, or .form-component--modifiers?
