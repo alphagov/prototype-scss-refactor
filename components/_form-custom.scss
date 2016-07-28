@@ -1,46 +1,34 @@
 .#{$govuk-namespace}#{$prefix-component}form-custom {
 
-  &__label {
-
-    @include media(mobile) {
-      float: none;
-      clear: left;
-    }
-
-    display: block;
-
-    position: relative;
-
-    background: $panel-colour;
-    border: 1px solid $panel-colour;
-    padding: (18px $gutter $gutter-half $gutter * 1.8);
-
-    margin-bottom: 10px;
-    cursor: pointer; // Encourage clicking on block labels
+  @include media(mobile) {
+    float: none;
+    clear: left;
   }
 
-  // To stack horizontally, use .--inline, to sit block labels next to each other
-  &__label--inline {
-    clear: none;
-    @include media (tablet) {
-      margin-bottom: 0;
-      margin-right: 10px;
-    }
-  }
+  display: block;
+
+  position: relative;
+
+  background: $panel-colour;
+  border: 1px solid $panel-colour;
+  padding: (18px $gutter $gutter-half $gutter * 1.8);
+
+  margin-bottom: 10px;
+  cursor: pointer; // Encourage clicking on block labels
 
   // States
   // Using .selected here as this is set by selection-buttons.js
-  &__label.selected,
+  &.selected,
   // Ideally we'd use a state class, e.g. .is-selected
-  &__label.is-selected {
+  &.is-selected {
     background: $white;
     border-color: $black;
   }
 
   // Using .focused here as this is set by selection-buttons.js
-  &__label.focused,
+  &.focused,
   // Ideally we'd use a state class, e.g. .has-focus, or is-focused
-  &__label.is-focused {
+  &.is-focused {
     outline: $width-focus-outline solid $focus-colour;
   }
 
@@ -71,4 +59,22 @@
     }
 
   }
+
+  // To stack horizontally, use .--inline, to sit block labels next to each other
+  // &--inline {
+  //   clear: none;
+  //   @include media (tablet) {
+  //     margin-bottom: 0;
+  //     margin-right: 10px;
+  //   }
+  // }
+
+  // Use these for custom radios and checkboxes
+  &--radio {
+
+  }
+  &--checkbox {
+
+  }
+
 }
