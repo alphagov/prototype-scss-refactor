@@ -1,5 +1,13 @@
 .#{$govuk-namespace}#{$prefix-component}form-group {
 
+  // Set spacing here for now
+  // TODO: this should be moved into a utility class
+  margin-bottom: $gutter-half;
+
+  @include media(tablet) {
+    margin-bottom: $gutter;
+  }
+
   @include box-sizing(border-box);
 
   @include clearfix;
