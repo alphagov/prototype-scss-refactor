@@ -1,6 +1,6 @@
 {
   "name": "prototype-scss-refactor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A prototype for the scss files in the govuk templae, front end toolkit and govuk elements",
   "main": "index.js",
   "scripts": {
