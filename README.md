@@ -22,6 +22,7 @@ Things to do:
 * Add documentation for each layer
 * Remove placeholders % where used
 * Decide on use of prefixes o- object ?
+* Decide how to set widths for form-element__control
 
 ---
 
@@ -32,7 +33,7 @@ The files in assets/scss have been ordered following ITCSS principles:
 High level settings, global variables
 
 For example colour values, spacing units, globally available variables
-This layer can be used by the entire project
+This layer can be used by the entire project.
 
 ### Tools
 
@@ -50,9 +51,9 @@ Ground zero styles, normalize, resets box sizing
 the * selector for box-sizing
 This layer affects a lot of the dom
 
-### Base
+### Base (HTML elements)
 
-Unclasses HTML elements (type selectors)
+Unclassed HTML elements (type selectors)
 More explicit than the reset layer
 h1 - h6, basic links, lists
 
@@ -65,7 +66,7 @@ This is the objects layer, put the media object in here.
 Try to create a generic list object
 
     .ui-list {}
-    .ui-list-item {}
+    .ui-list__item {}
 
 Choose agnostic names.
 
@@ -100,10 +101,11 @@ Causes rules to trickle together and we are adding on layers, not undoing.
 * Decide on use of [namespaces/prefixes](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) o- object ?
 * Do we want to use a c- prefix for components?
 
-Suggestion:
+Namespaces we are using:
 
 Component          c-               c-message-bar
 Object (layout)    o-               o-site-width-container
+Utility            u-               u-one-half
 States             is-              is-visible
                    has-             has-loaded
 JS hooks           js-              js-enabled
@@ -125,11 +127,9 @@ For JS hooks, we currently use
         […]
     </div>
 
-The advantage of the standalone class is that it makes it easy to use JavaScript to apply generic state hooks to any component.
+Use standalone classes to apply states to components.
 
-https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/
-
-https://github.com/chris-pearce/css-guidelines#state-hooks
+Examples of standalone classes:
 
     .is-active
     .has-loaded
@@ -138,6 +138,32 @@ https://github.com/chris-pearce/css-guidelines#state-hooks
     .is-disabled
     .is-expanded
     .is-collapsed
+
+
+------------------------------------------------------------------------------------------
+
+### Questions to answer
+
+- Print stylesheet & how do the mixins for this work?
+- What units do we want to use rem/em/px a combo? At the moment we use 15px, this means we can't vertically align things properly
+- Names for sizes of things?
+
+    .button--big or .button--large
+    .font-small or .font-alpha
+
+------------------------------------------------------------------------------------------
+
+### Other things consider (out of scope for this prototype)
+
+- Can we reduce the size of the font files?
+- Can we fallback to PNGs in template/images and instead use SVG?
+
+------------------------------------------------------------------------------------------
+
+### Futher reading
+
+https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/
+https://github.com/chris-pearce/css-guidelines#state-hooks
 
 ------------------------------------------------------------------------------------------
 
@@ -159,22 +185,3 @@ https://github.com/chris-pearce/css-guidelines#state-hooks
   This prevents a spike in the specificity graph
 - Add extra layers as you need
 - Media queries sit with the rules that they affect
-
-------------------------------------------------------------------------------------------
-
-### Other things to think about
-
-- How do we want to define .js-enabled modifiers?
-- Can we reduce the size of the font files?
-- Can we fallback to PNGs in template/images and instead use SVG?
-- Print stylesheet & how do the mixins for this work?
-- What units do we want to use rem/em/px a combo? At the moment we use 15px, this means we can't vertically align things properly
-- Names for sizes of things?
-
-    .button--big or .button--large
-    .font-small or .font-alpha
-
-- Do we want to use full words or abbreviations?
-
-    .btn vs .button
-    .nav vs .navigation
