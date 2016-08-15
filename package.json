@@ -1,19 +1,21 @@
 {
-  "name": "prototype-scss-refactor",
+  "name": "@gemmaleigh/prototype-scss-refactor",
   "version": "0.0.3",
-  "description": "A prototype for the scss files in the govuk templae, front end toolkit and govuk elements",
+  "description": "A prototype for the scss files in the govuk template, front end toolkit and govuk elements",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gemmaleigh/prototype-scss-refactor.git"
+    "url": "git+https://github.com/alphagov/prototype-scss-refactor.git"
   },
   "author": "Government Digital Service developers <govuk-dev@digital.cabinet-office.gov.uk> (http://digital.cabinetoffice.gov.uk)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gemmaleigh/prototype-scss-refactor/issues"
   },
-  "homepage": "https://github.com/gemmaleigh/prototype-scss-refactor#readme"
+  "homepage": "https://github.com/alphagov/prototype-scss-refactor#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
