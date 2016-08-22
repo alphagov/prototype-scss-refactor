@@ -4,7 +4,7 @@
   "description": "A prototype for the scss files in the govuk template, front end toolkit and govuk elements",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,6 @@
   },
   "homepage": "https://github.com/alphagov/prototype-scss-refactor#readme",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {},
+  "private": "true"
 }
