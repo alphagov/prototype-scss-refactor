@@ -1,6 +1,6 @@
 {
   "name": "@gemmaleigh/prototype-scss-refactor",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A prototype for the scss files in the govuk template, front end toolkit and govuk elements",
   "main": "index.js",
   "scripts": {
