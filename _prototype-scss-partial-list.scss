@@ -19,14 +19,13 @@
 // Should the print stylesheet sit here?
 @import "generic.print";
 
-// Unclassed HTML elements (not to be confused with GOV.UK elements)
-// Let's rename this folder to /base for now
-@import "base.page";
-@import "base.typography";
-@import "base.form-group";
-@import "base.links";
-@import "base.lists";
-@import "base.tables";
+// Unclassed HTML elements
+@import "elements.page";
+@import "elements.typography";
+@import "elements.form-group";
+@import "elements.links";
+@import "elements.lists";
+@import "elements.tables";
 
 // Objects
 @import "objects.wrapper";
@@ -64,14 +63,14 @@
 
 
 // Overrides, helpers and utilities
-@import "utilities/clearfix";
-@import "utilities/headings";
-@import "utilities/helpers";
-@import "utilities/inline-block";
-@import "utilities/text";
-@import "utilities/vertical-spacing";
-@import "utilities/visually-hidden";
-@import "utilities/widths";
+@import "utilities.clearfix";
+@import "utilities.headings";
+@import "utilities.helpers";
+@import "utilities.inline-block";
+@import "utilities.text";
+@import "utilities.vertical-spacing";
+@import "utilities.visually-hidden";
+@import "utilities.widths";
 
 // Hacks and fixes
-@import "utilities/shame";
+@import "shame";
