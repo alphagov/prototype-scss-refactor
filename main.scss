@@ -1,62 +1,62 @@
 // Settings - variables
-@import "settings/global";
-@import "settings/colours";
-@import "settings/colours-organisation";
+@import "settings.global";
+@import "settings.colours";
+@import "settings.colours-organisation";
 
 // Tools - functions and mixins
-@import "tools/clearfix";
-@import "tools/conditionals";
-@import "tools/css3";
-@import "tools/device-pixels";
-@import "tools/print";
-@import "tools/pxtoem";
-@import "tools/typography";
-@import "tools/url-helpers";
+@import "tools.clearfix";
+@import "tools.conditionals";
+@import "tools.css3";
+@import "tools.device-pixels";
+@import "tools.print";
+@import "tools.pxtoem";
+@import "tools.typography";
+@import "tools.url-helpers";
 
 // Generic - Reset
-@import "generic/normalize";
-@import "generic/reset";
+@import "generic.normalize";
+@import "generic.reset";
 // Should the print stylesheet sit here?
-@import "generic/print";
+@import "generic.print";
 
 // Unclassed HTML elements (not to be confused with GOV.UK elements)
 // Let's rename this folder to /base for now
-@import "base/page";
-@import "base/typography";
-@import "base/form-group";
-@import "base/links";
-@import "base/lists";
-@import "base/tables";
+@import "base.page";
+@import "base.typography";
+@import "base.form-group";
+@import "base.links";
+@import "base.lists";
+@import "base.tables";
 
 // Objects
-@import "objects/wrapper";
-@import "objects/grid-layout";
+@import "objects.wrapper";
+@import "objects.grid-layout";
 
 // Components
 // It should be possible to reorder these without affecting the appearance of any components
 
-@import "components/box";
-@import "components/breadcrumb";
-@import "components/buttons";
-@import "components/details";
-@import "components/external-links";
-@import "components/form-element";
-@import "components/form-custom";
-@import "components/form-date";
-@import "components/form-validation";
-@import "components/global-header";
-@import "components/global-footer";
-@import "components/icons";
-@import "components/lists";
-@import "components/media-player";
-@import "components/message-bar";
-@import "components/notice";
-@import "components/panel";
-@import "components/phase-banner";
-@import "components/phase-tag";
-@import "components/step";
-@import "components/tables";
-@import "components/typography";
+@import "components.box";
+@import "components.breadcrumb";
+@import "components.buttons";
+@import "components.details";
+@import "components.external-links";
+@import "components.form-element";
+@import "components.form-custom";
+@import "components.form-date";
+@import "components.form-validation";
+@import "components.global-header";
+@import "components.global-footer";
+@import "components.icons";
+@import "components.lists";
+@import "components.media-player";
+@import "components.message-bar";
+@import "components.notice";
+@import "components.panel";
+@import "components.phase-banner";
+@import "components.phase-tag";
+@import "components.step";
+@import "components.tables";
+@import "components.typography";
 
 // Add a scope layer
 // This can be used for cms content (e.g. govuk-govspeak)
